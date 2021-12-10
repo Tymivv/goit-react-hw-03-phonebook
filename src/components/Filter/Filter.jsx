@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Filter = ({ value, onChange }) => (
-  <label>
+  <label className="heading">
     Find contact by name
     <input
       type="text"
