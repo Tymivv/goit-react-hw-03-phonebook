@@ -36,7 +36,8 @@ class App extends Component {
   addContacts = ({ name, number }) => {
     if (
       this.state.contacts.some(
-        ({ id, nameContact, tel }) => nameContact === name,
+        ({ id, nameContact, tel }) =>
+          nameContact.toLowerCase() === name.toLowerCase(),
       )
     ) {
       alert(`name "${this.state.name}" is already in list`);
